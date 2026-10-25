@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yashwanthi MPJ | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Yashwanthi MPJ, Computer Science student, full-stack and AI developer."
+    />
+    <style>
+      :root {
+        --bg: #ffffff;
+        --text: #1f2933;
+        --muted: #5f6c7b;
+        --card: #f5f7fa;
+        --border: #e1e5ea;
+        --accent: #2563eb;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0f1419;
+          --text: #e6e9ee;
+          --muted: #9aa5b1;
+          --card: #182029;
+          --border: #263240;
+          --accent: #60a5fa;
+        }
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family:
+          system-ui,
+          -apple-system,
+          "Segoe UI",
+          Roboto,
+          Arial,
+          sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      header {
+        border-bottom: 1px solid var(--border);
+        position: sticky;
+        top: 0;
+        background: var(--bg);
+        z-index: 10;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 0;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      nav .logo {
+        font-weight: 700;
+        color: var(--text);
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        font-size: 0.95rem;
+      }
+
+      section {
+        padding: 48px 0 8px;
+      }
+      h1 {
+        font-size: 2.2rem;
+        line-height: 1.2;
+      }
+      h2 {
+        font-size: 1.4rem;
+        margin-bottom: 16px;
+        padding-bottom: 6px;
+        border-bottom: 2px solid var(--border);
+      }
+      h3 {
+        font-size: 1.05rem;
+      }
+      p.lead {
+        color: var(--muted);
+        margin-top: 8px;
+        font-size: 1.1rem;
+      }
+      .hero p {
+        margin-top: 14px;
+      }
+      .links {
+        margin-top: 18px;
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+      }
+      .btn {
+        display: inline-block;
+        padding: 8px 16px;
+        border: 1px solid var(--accent);
+        border-radius: 6px;
+        color: var(--accent);
+        font-weight: 600;
+      }
+      .btn.primary {
+        background: var(--accent);
+        color: #fff;
+      }
+      .btn:hover {
+        text-decoration: none;
+        opacity: 0.85;
+      }
+
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 16px 18px;
+        margin-bottom: 14px;
+      }
+      .card .meta {
+        color: var(--muted);
+        font-size: 0.9rem;
+        margin: 2px 0 8px;
+      }
+      .card ul {
+        padding-left: 20px;
+      }
+      .card li {
+        margin-bottom: 4px;
+      }
+
+      .skills {
+        display: grid;
+        grid-template-columns: 140px 1fr;
+        gap: 8px 12px;
+      }
+      .skills dt {
+        font-weight: 600;
+      }
+      .skills dd {
+        color: var(--muted);
+      }
+
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-bottom: 8px;
+      }
+      .tags span {
+        font-size: 0.8rem;
+        padding: 2px 8px;
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        color: var(--muted);
+      }
+
+      ul.plain {
+        padding-left: 20px;
+      }
+      ul.plain li {
+        margin-bottom: 6px;
+      }
+
+      footer {
+        margin-top: 48px;
+        padding: 20px 0;
+        border-top: 1px solid var(--border);
+        color: var(--muted);
+        font-size: 0.9rem;
+        text-align: center;
+      }
+
+      @media (max-width: 560px) {
+        h1 {
+          font-size: 1.7rem;
+        }
+        .skills {
+          grid-template-columns: 1fr;
+          gap: 2px;
+        }
+        .skills dd {
+          margin-bottom: 8px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <a class="logo" href="#top">Yashwanthi MPJ</a>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container" id="top">
+      <section class="hero">
+        <h1>Hi, I’m Yashwanthi MPJ</h1>
+        <p class="lead">
+          Computer Science student building full-stack and AI-powered
+          applications.
+        </p>
+        <p>
+          I’m a final-year B.E. Computer Science student at St. Joseph’s
+          Institute of Technology (2023 – 2027). I work with the MERN stack,
+          LLMs and deep learning, and I enjoy building practical products in
+          cybersecurity, accessibility and automation.
+        </p>
+        <div class="links">
+          <a class="btn primary" href="mailto:yashwanthipandiyan@gmail.com"
+            >Email me</a
+          >
+          <a
+            class="btn"
+            href="https://github.com/YOUR_GITHUB_USERNAME"
+            target="_blank"
+            rel="noopener"
+            >GitHub</a
+          >
+          <a
+            class="btn"
+            href="https://linkedin.com/in/yashwanthipandiyan"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn</a
+          >
+        </div>
+      </section>
+
+      <section id="about">
+        <h2>Education</h2>
+        <div class="card">
+          <h3>St. Joseph’s Institute of Technology</h3>
+          <p class="meta">
+            B.E. in Computer Science · 2023 – 2027 · CGPA: 8.13
+          </p>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>Technical Skills</h2>
+        <dl class="skills">
+          <dt>Languages</dt>
+          <dd>Java, JavaScript, SQL</dd>
+          <dt>Backend</dt>
+          <dd>Node.js, Express.js, REST APIs, MongoDB</dd>
+          <dt>Frontend</dt>
+          <dd>React.js, HTML, CSS</dd>
+          <dt>AI / ML</dt>
+          <dd>LLM, Gen AI, Deep Learning, Gemini API</dd>
+          <dt>Tools</dt>
+          <dd>Automation Anywhere 360, Git, Google AI Studio, Docker, Linux</dd>
+          <dt>Core</dt>
+          <dd>Data Structures, Algorithms, Networks, OS, DBMS</dd>
+        </dl>
+      </section>
+
+      <section id="experience">
+        <h2>Experience</h2>
+        <div class="card">
+          <h3>Automation Engineer · FLSmidth Pvt Ltd</h3>
+          <p class="meta">Dec 2025 – Jan 2026</p>
+          <ul>
+            <li>
+              Developed RPA bots using Automation Anywhere (A360) to extract
+              data from websites and update structured Excel files.
+            </li>
+            <li>
+              Implemented workflows with error handling, status tracking and
+              iteration control for reliable execution.
+            </li>
+            <li>
+              Created automated log files capturing execution status
+              (INFO/ERROR), timestamps and failure details for monitoring and
+              debugging.
+            </li>
+            <li>
+              Automated email notifications to send execution summaries and
+              output files after successful bot completion.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="card">
+          <h3>AI Complaint Management System</h3>
+          <div class="tags">
+            <span>Node.js</span><span>React.js</span><span>MongoDB</span
+            ><span>Express.js</span><span>Gemini API</span><span>NLP</span>
+          </div>
+          <ul>
+            <li>
+              Full-stack grievance management platform (MERN) with role-based
+              access for 3 user roles (Citizen, Officer, Admin), secured with
+              JWT authentication.
+            </li>
+            <li>
+              Designed REST APIs with MongoDB for complaint submission,
+              tracking, assignment and status management, with average API
+              response times under 250 ms.
+            </li>
+            <li>
+              Built real-time status notifications and analytics dashboards with
+              99% successful request handling.
+            </li>
+          </ul>
+          <p class="meta">
+            <a
+              href="https://github.com/YOUR_GITHUB_USERNAME/REPO_NAME"
+              target="_blank"
+              rel="noopener"
+              >View on GitHub</a
+            >
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>PhishGuard AI</h3>
+          <div class="tags">
+            <span>Python</span><span>FastAPI</span><span>React.js</span
+            ><span>MySQL</span><span>PyTorch</span><span>DistilBERT</span
+            ><span>SHAP</span>
+          </div>
+          <ul>
+            <li>
+              AI-powered phishing detection platform using DistilBERT, achieving
+              98% accuracy and 96% F1-score.
+            </li>
+            <li>
+              Hybrid threat analysis engine combining URL reputation, sender
+              verification and SPF/DKIM/DMARC validation to produce phishing
+              risk assessments.
+            </li>
+            <li>
+              Integrated SHAP for explainable AI, giving feature-level insights
+              and real-time risk scores with under 300 ms inference latency.
+            </li>
+          </ul>
+          <p class="meta">
+            <a
+              href="https://github.com/YOUR_GITHUB_USERNAME/REPO_NAME"
+              target="_blank"
+              rel="noopener"
+              >View on GitHub</a
+            >
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Accessibility Tool for Disabled Users</h3>
+          <div class="tags">
+            <span>MERN</span><span>YOLO</span><span>OpenCV</span
+            ><span>Speech-to-Text</span><span>Text-to-Speech</span>
+          </div>
+          <ul>
+            <li>
+              Accessibility platform supporting 4 categories (visually impaired,
+              hearing impaired, speech impaired and wheelchair users) in one
+              MERN application.
+            </li>
+            <li>
+              Integrated YOLO-based obstacle detection, speech-to-text and
+              text-to-speech, achieving 92% detection accuracy with under 120 ms
+              average inference time.
+            </li>
+            <li>
+              Designed a real-time navigation system with crowd-sourced hazard
+              reporting and location assistance, validated across simulated
+              scenarios.
+            </li>
+          </ul>
+          <p class="meta">
+            <a
+              href="https://github.com/YOUR_GITHUB_USERNAME/REPO_NAME"
+              target="_blank"
+              rel="noopener"
+              >View on GitHub</a
+            >
+          </p>
+        </div>
+      </section>
+
+      <section id="achievements">
+        <h2>Achievements</h2>
+        <ul class="plain">
+          <li>
+            1st Place, Hack Hustle 24-hour Hackathon (Cybersecurity), Saveetha
+            Engineering College.
+          </li>
+          <li>
+            Finalist at Hack4Good (NIT Calicut) and IEEE Smartathon 2025 (IEEE
+            IAS, L&amp;T).
+          </li>
+          <li>
+            Solved 100+ LeetCode, 1100+ SkillRack and 350+ CodeChef problems.
+          </li>
+          <li>
+            CodeChef (0–500) certification, 2 MySQL certifications (HackerRank),
+            Top 20% on TryHackMe.
+          </li>
+        </ul>
+      </section>
+
+      <section id="certifications">
+        <h2>Certifications</h2>
+        <ul class="plain">
+          <li>Deep Learning – NVIDIA</li>
+          <li>Foundations of Cybersecurity – Google</li>
+          <li>Programming in Java – NPTEL</li>
+          <li>Networking – Cisco</li>
+          <li>
+            Oracle Cloud Infrastructure Certified Generative AI Professional
+          </li>
+          <li>Python for Data Science – IIT Madras</li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>
+          Open to internships and fresher opportunities. Feel free to reach out.
+        </p>
+        <ul class="plain" style="margin-top: 10px">
+          <li>
+            Email:
+            <a href="mailto:yashwanthipandiyan@gmail.com"
+              >yashwanthipandiyan@gmail.com</a
+            >
+          </li>
+          <li>Phone: <a href="tel:+918610349617">+91 8610349617</a></li>
+          <li>
+            LinkedIn:
+            <a
+              href="www.linkedin.com/in/yashwanthi-pandiyan-0301522b9"
+              target="_blank"
+              rel="noopener"
+              >linkedin.com/in/yashwanthi-pandiyan-0301522b9</a
+            >
+          </li>
+          <li>
+            GitHub:
+            <a
+              href="https://github.com/Yashwanthi123"
+              target="_blank"
+              rel="noopener"
+              >github.com/Yashwanthi123</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">© <span id="year"></span> Yashwanthi MPJ</div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
